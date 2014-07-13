@@ -1,42 +1,5 @@
-class Movie
+require_relative 'playlist'
 
-	def initialize(title, rank=0)
-		@title = title
-		@rank = rank
-	end
-
-	def to_s
-		"#{@title} has a rank of #{@rank}"
-	end
-
-	def thumbs_up
-		@rank += 1
-	end
-
-	def thumbs_down
-		@rank -= 1
-	end
-end
-
-class Playlist
-	def initialize(name)
-		@name = name
-		@movies = []
-	end
-
-	def add_movie(movie)
-		@movies << movie
-	end
-
-	def play 
-		puts "#{@name}'s playlist:"
-
-		@movies.each do |movie|
-			movie.thumbs_up
-			puts movie
-		end
-	end
-end
 
 
 movie1 = Movie.new('Ghostbusters', 10)
