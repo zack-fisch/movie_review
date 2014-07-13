@@ -1,7 +1,6 @@
 require_relative 'playlist'
 
 
-
 movie1 = Movie.new('Ghostbusters', 10)
 movie2 = Movie.new('Back to the Future', 8)
 movie3 = Movie.new('Goldfinger')
